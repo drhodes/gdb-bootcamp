@@ -7,11 +7,9 @@ apt-get update
 apt-get install -y build-essential gdb libgit2-dev unzip emacs 
 apt-get install -y trash-cli # a kinder rm.
 
-# setup user library path
-
-mkdir -p $UHOME/deps
 
 # setup include and linker paths
+mkdir -p $UHOME/deps
 CRITPATH=$UHOME/deps/criterion-v2.3.2
 
 echo '# criterion setup' >> ~/.bashrc
